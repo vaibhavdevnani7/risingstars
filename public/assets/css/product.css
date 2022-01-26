@@ -1,0 +1,95 @@
+#filedrag
+{
+  display: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0;
+  margin: 1em 0;
+  color: #555;
+  border: 2px dashed #555;
+  border-radius: 7px;
+  cursor: default;
+}
+
+#filedrag.hover
+{
+  color: #f00;
+  border-color: #f00;
+  border-style: solid;
+  box-shadow: inset 0 3px 4px #888;
+}
+.remove-input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    cursor: pointer;
+  }
+
+.upload_icon {
+    padding: 20px;
+    background: #efefef;
+    border: 1.5px solid #b8b8b8;
+    border-radius: 5px;
+    width: auto;
+    color: #fff;
+    cursor: pointer;
+}
+.file {
+    display: none;
+}
+.up_icon {
+    font-size: 30px !important;
+    color: #ffcf31;
+    width: 30px;
+    height: 30px;
+}
+.custom_tooltip {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    height: 14px;
+}
+.fa-info-circle {
+    /* color: #999; */
+    color: #0e8fbf;
+    margin-left: 5px;
+}
+.custom_tooltip .right {
+    width: 280px;
+    top: 50%;
+    left: 100%;
+    margin-left: 16px;
+    transform: translate(0, -50%);
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #333333;
+    font-size: 12px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 99999999;
+    box-sizing: border-box;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+.sideitems li{
+    text-decoration: none;
+    padding: 6px;
+    font-size: 16px;
+    border-bottom: 1px #ccc solid;
+    
+}
+.sideitems li a{
+    text-decoration: none;
+    color: #000;
+}
+.sideitems li a:hover, .sideitems li .active{
+    color:#056eb9;
+    font-weight: bold;
+}
+.listCollumn .col-md-4 {
+     padding-left: 15px; 
+}

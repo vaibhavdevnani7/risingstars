@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+  <!-- Torus Kit `.css` file -->
+  <link rel="stylesheet" href="../assets/css/style.min.css">
+
+  <!-- Torus Kit `.js` file -->
+  <script src="../assets/js/toruskit.min.js"></script>
+
+  <title>Documentation - Pro - Beautiful Responsive Bootstrap 5 HTML Template</title>
+
+</head>
+
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      font-family: var(--bs-font-sans-serif) !important;
+      font-weight: 400;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 3rem;
+    }
+    h2 {
+      margin-top: 3rem;
+    }
+    .toc ol {
+      list-style: none;
+    }
+    .toc > ol > li {
+      margin-bottom: 2rem;
+    }
+    .toc li {
+      margin-bottom: .2rem;
+    }
+  </style>
+
+<body>
+  <section class="bg-light py-6 text-center">
+    <h1 class="display-4">Pro - Beautiful Responsive Bootstrap 5 HTML Template</h1>
+    <h2 class="h3 text-body">Documentation</h2>
+  </section>
+
+  <main class="container py-4">
+    <div class="row">
+      <div class="col-md-3">
+        <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#get-started">Get started</a>
+            
+                <ol>
+                    
+                    <li><a href="#how-to-use">How to use</a>
+            		</li>
+
+                    <li><a href="#installation">Installation</a>
+            
+                <ol>
+                    
+                    <li><a href="#npm">NPM</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#eleventy">Eleventy</a>
+            		</li>
+
+                    <li><a href="#other-tools">Other tools</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#editing-the-template">Editing the template</a>
+            
+                <ol>
+                    
+                    <li><a href="#run-the-11ty-and-sass">Run the 11ty and SASS</a>
+            		</li>
+
+                    <li><a href="#edit-sass-files">Edit SASS files</a>
+            		</li>
+
+                    <li><a href="#torus-kit-effects">Torus Kit effects</a>
+            		</li>
+
+                    <li><a href="#template-data">Template data</a>
+            		</li>
+
+                    <li><a href="#disabling-preview-mode">Disabling preview mode</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+      </div>
+      <div class="col-md-9">
+        <h2 id="get-started">Get started</h2>
+<h3 id="how-to-use">How to use</h3>
+<p>Thank you for purchasing this template! This is a <strong>pure HTML</strong> template, so it not compatible with any CMS system such as WordPress, Drupal, Joomla, etc. This template is built using <a href="https://getbootstrap.com/">Bootstrap 5</a> and <a href="https://www.11ty.dev/">Eleventy/11ty</a> static site generator, so it includes not just final <code>.html</code>, <code>.js</code> and <code>.css</code> files, but also source <code>.scss</code> and <a href="https://www.11ty.()dev/">Eleventy</a> files. The 11ty generator helps you to easily edit the template without needing to edit every separate HTML file.</p>
+<p>We have included <strong>exclusive Torus Kit license</strong> just for this template. <a href="https://toruskit.com/">Torus Kit</a> allows you to create advanced interactions and effects with simple code.</p>
+<h3 id="installation">Installation</h3>
+<p>Before you start, you need to install Node package manager (if you haven’t already) and couple of other tools that will helps you to build the template. We have prepared <code>package.json</code> file, that includes everything you need.</p>
+<h4 id="npm">NPM</h4>
+<p>Check <a href="https://nodejs.org/en/">NodeJS</a> installation tutorials.</p>
+<h3 id="eleventy">Eleventy</h3>
+<p>To install 11ty generator, open command line / terminal and type <code>npm install -g @11ty/eleventy</code> then hit <kbd>enter</kbd>. This will install 11ty in a global scope.</p>
+<h3 id="other-tools">Other tools</h3>
+<p>When you are in command line / terminal, navigate to the <code>src</code> folder of your extracted template, then enter <code>npm install</code>. This will install all necessary packages from <code>package.json</code>.</p>
+<h2 id="editing-the-template">Editing the template</h2>
+<h3 id="run-the-11ty-and-sass">Run the 11ty and SASS</h3>
+<p>Before you start to edit source files, you need to start the 11ty <strong>server</strong> and let the Gulp to <strong>watch for changes</strong> on source <code>.scss</code> files.</p>
+<p>Open command line / terminal and navigate to <code>src</code> folder, then enter <code>eleventy --serve</code>. This starts a <strong>localhost server</strong> where you can see your template just if it were uploaded on live server. Open your browser and enter <code>localhost:8080</code> to your address bar.</p>
+<p>Open new command line / terminal and navigate again to <code>src</code> folder. This time enter <code>gulp</code> command - this will start the Gulp task manager to watch for changes you made in source <code>.scss</code> files.</p>
+<h3 id="edit-sass-files">Edit SASS files</h3>
+<p>This templates uses SASS and it’s <code>.scss</code> files to generate final <code>.css</code> files. In order to run the template without any styling errors, please edit only <code>_user-style.scss</code> and <code>_user-variables.scss</code> files. Other files are source Torus Kit and Bootstrap files, that shouldn’t be edited.</p>
+<ul>
+<li><code>_user-variables.scss</code> - here you can add any custom variables that will override the Torus Kit and Bootstrap default ones.</li>
+<li><code>_user-style.scss</code> - place your custom CSS rules here.</li>
+</ul>
+<h3 id="torus-kit-effects">Torus Kit effects</h3>
+<p>To change the default effects that comes within the template, or to create new ones, please read the <a href="https://toruskit.com/docs/getting-started/introduction/">Torus Kit documentation</a></p>
+<h3 id="template-data">Template data</h3>
+<p>The majority of <em>data</em> in the template is stored in <code>src/11ty/_data/eleventyComputed.js</code> file. By the <em>data</em> we means:</p>
+<ul>
+<li>navigation items</li>
+<li>feature boxes</li>
+<li>slider contents</li>
+<li>or any content that is repeating</li>
+</ul>
+<h3 id="disabling-preview-mode">Disabling preview mode</h3>
+<p>To view the template with all illustrations and effects, change the <code>preview</code> variable to <code>false</code> in <code>src/11ty/_data/eleventyComputed.js</code>.</p>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
