@@ -1,0 +1,39 @@
+<div class="web-3-section">
+                        <a href="https://sand-challenge-855.notion.site/Rising-Stars-Guide-48f085cde58342cbb02792e8ca56fefb" target="_blank"><div class="p-2 m-4 web-3" style="
+                            ">Get Started With Web3 <img src="{{asset('assets/img/notion.png')}}"></div></a>
+                      </div>
+
+                      <div id="nt-preloader" class="preloader"><div class="loader01"></div></div>
+                      http://localhost/risingstars/public/
+
+                      function _sticked()
+{$(window).scroll(function(){var top_bar=$('.top-bar.is-sticky').size();var scroll=$(window).scrollTop();if(top_bar){if(scroll>=50){$(".top-bar.is-sticky").addClass("sticked");}else{$(".top-bar.is-sticky").removeClass("sticked");}}});}
+line 68
+
+<div class="blogSection" data-full-url="product=metamask">
+    <div class="productcard">
+        <div class="productthumb show-modal" data-product-slag="metamask" data-toggle="modal" data-target=".detailsCards">
+            <img loading="lazy" src="http://localhost/risingstars/public/storage/product/logo/metamaskthumb.jpeg">
+        </div>
+        <div class="productdetails show-modal" data-product-slag="metamask" data-toggle="modal" data-target=".detailsCards">
+            <h2></h2>
+            <p></p>
+            
+        </div>
+        <div class="productags">
+                                    
+                                    <a href="http://localhost/risingstars/public?tags=chrome-extensions">#Chrome Extensions</a>
+          
+        </div>
+        
+        <div class="productupvote">
+         
+                <a href="http://localhost/risingstars/public/login"> <span>0</span> 
+                  
+                  <i class="far fa-star"></i>
+                </a>
+                                          </div>
+        
+    </div>
+    
+</div>

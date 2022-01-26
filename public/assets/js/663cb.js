@@ -64,8 +64,7 @@ else
 else
 {jSideMenu.addClass('is-active');}
 isVisible=true;isActive=true;return false;});jBtnClose.on('touchend click',function(){jSideMenu.removeClass('is-active');isActive=false;return false;});jWindow.on('scroll',throttle(function(){if(isActive)
-{jSideMenu.removeClass('is-active');isActive=false;};},500));};function _sticked()
-{$(window).scroll(function(){var top_bar=$('.top-bar.is-sticky').size();var scroll=$(window).scrollTop();if(top_bar){if(scroll>=50){$(".top-bar.is-sticky").addClass("sticked");}else{$(".top-bar.is-sticky").removeClass("sticked");}}});}
+{jSideMenu.removeClass('is-active');isActive=false;};},500));};
 function _tilt()
 {var nTilt=document.querySelectorAll(".js-tilt");if(device.desktop()&&nTilt.length>0)
 {VanillaTilt.init(nTilt);};};function _parallax()
@@ -105,7 +104,7 @@ else
 {var element=wave.getElementsByTagName('path'),oData=wave.getAttribute('data-wave')||{},myWave;if(oData.length)
 {var dataOptions=JSON.parse(oData);wave.options=Object.assign({},defaultOptions,dataOptions);}
 else
-{wave.options=Object.assign({},defaultOptions);};myWave=wavify(element,wave.options);});};};$(document).ready(function(){_header();_chooseLang();_sideMenuToggle();_setVivus();_tilt();_parallax();_isotopeSorting();_slickSlider();_fancybox();_accordion();_tabs();_counters();_scrollTop();_sticked()});jWindow.on('load',function(){var jMasonry=$('.js-masonry');if(jMasonry.length>0&&$.fn.isotope)
+{wave.options=Object.assign({},defaultOptions);};myWave=wavify(element,wave.options);});};};$(document).ready(function(){_header();_chooseLang();_sideMenuToggle();_setVivus();_tilt();_parallax();_isotopeSorting();_slickSlider();_fancybox();_accordion();_tabs();_counters();_scrollTop();});jWindow.on('load',function(){var jMasonry=$('.js-masonry');if(jMasonry.length>0&&$.fn.isotope)
 {jMasonry.masonry('layout');};_scrollTo();_wavify();_g_map();});$.fn.is_on_screen=function(){var viewport={top:jWindow.scrollTop(),left:jWindow.scrollLeft()};viewport.right=viewport.left+jWindow.width();viewport.bottom=viewport.top+jWindow.height();var bounds=this.offset();bounds.right=bounds.left+this.outerWidth();bounds.bottom=bounds.top+this.outerHeight();return(!(viewport.right<bounds.left||viewport.left>bounds.right||viewport.bottom<bounds.top||viewport.top>bounds.bottom));};function now(){return new Date().getTime();};function throttle(func,wait,options)
 {var timeout,context,args,result;var previous=0;if(!options)options={};var later=function later()
 {previous=options.leading===false?0:now();timeout=null;result=func.apply(context,args);if(!timeout)context=args=null;};var throttled=function throttled()

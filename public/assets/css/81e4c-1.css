@@ -5028,7 +5028,6 @@ input[type=submit].btn-block {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
     background-clip: border-box;
     /*border: 1px solid rgba(0, 0, 0, .125);*/
     border-radius: .25rem
@@ -20915,7 +20914,6 @@ main p:first-child {
 }
 
 main p:last-child {
-    margin-bottom: 0 !important
 }
 
 a {
@@ -21004,8 +21002,7 @@ a:hover {
 
 .top-bar--dark.is-sticky {
     /*background-color: #fff;*/
-    -webkit-box-shadow: 0 1px 5px 0 rgba(36, 36, 36, .12);
-    box-shadow: 0 1px 5px 0 rgba(36, 36, 36, .12)
+    
 }
 
 .top-bar--dark.is-expanded .top-bar__collapse {
@@ -21111,10 +21108,10 @@ a:hover {
 }
 
 .top-bar.is-sticky {
-    position: fixed;
     top: 0;
     -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
+    animation-fill-mode: both;
+    position: absolute;
 }
 
 .top-bar.is-expanded .top-bar__collapse {
@@ -23093,7 +23090,7 @@ label {
 
 .pl-10,
 .px-10 {
-    padding-left: 5rem !important
+    padding-left: 6rem !important
 }
 
 .p-11 {

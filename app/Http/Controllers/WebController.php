@@ -14,6 +14,7 @@ class WebController extends Controller
     function posts(){
 
         if(request('tags')){
+            $tagflux = 'tags';
             $tag_id = DB::table('tags')->select('id')->where(['slag'=>request('tags')])->first()->id;
             $query = "SELECT * FROM products  WHERE products.is_deleted=0 AND products.status = 1 and JSON_SEARCH(tags, 'one', $tag_id) is not null order by products.created_at desc";
             $products = DB::select($query);
@@ -38,9 +39,9 @@ class WebController extends Controller
         else{
             $products = DB::table('products')->where(['products.status'=>1, 'is_deleted'=>0])->orderBy('products.created_at','desc')->get();
         }
-
+        $tagflux = request('tags');
         //return view('web.posts',compact('products'));  // Version 1 
-        return view('web.posts-v2',compact('products'));
+        return view('web.posts-v2',compact('products', 'tagflux'));
         
     }
      function home(){
