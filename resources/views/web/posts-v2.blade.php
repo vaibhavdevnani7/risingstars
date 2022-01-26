@@ -174,7 +174,24 @@
                        <h3>World’s Leading Place To Discover Crypto & Web3 Projects.</h3>
                 
         
-                       <div class="blogSection topcardblog" style="right:45px; bottom:27px;">
+                       
+                        
+                       <div class="socialSection">
+                         <a href="{{url('add-product')}}"><button class="addprod">Feature Product
+                        </button></a>
+                        <div class='icons'>
+                        <a href="https://twitter.com/Rising_Cap" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://discord.gg/Msh4BeYhDj" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        </div>
+                               
+
+                       </div>
+                    </div>
+                    <div class="blogSection topcardblog" style="right:45px; bottom:27px;">
                         <div class="productcard topcard">
                             <div class="productthumb" >
                                 <img loading="lazy" src="assets/img/baycthumb.jpg">
@@ -200,7 +217,7 @@
                             </div>
                         
                         </div>
-                        <div class="blogSection topcardblog" style="right:16px; bottom:136px;">
+                        <div class="blogSection topcardblog" style="right:6px; bottom:136px;">
                         <div class="productcard topcard">
                             <div class="productthumb" >
                                 <img loading="lazy" src="assets/img/maticthumb.png">
@@ -226,7 +243,7 @@
                             </div>
                         
                         </div>
-                        <div class="blogSection topcardblog" style="right:348px; bottom:201px;">
+                        <div class="blogSection topcardblog" style="right:298px; bottom:197px;">
                         <div class="productcard topcard">
                             <div class="productthumb" >
                                 <img loading="lazy" src="assets/img/metamaskthumb.jpeg">
@@ -252,7 +269,7 @@
                             </div>
                         
                         </div>
-                        <div class="blogSection topcardblog" style="right:385px; bottom:87px;">
+                        <div class="blogSection topcardblog" style="right:359px; bottom:86px;">
                         <div class="productcard topcard">
                             <div class="productthumb" >
                                 <img loading="lazy" src="assets/img/dogethumb.png">
@@ -278,22 +295,6 @@
                             </div>
                         
                         </div>
-                        
-                       <div class="socialSection">
-                         <a href="{{url('add-product')}}"><button class="addprod">Feature Product
-                        </button></a>
-                        <div class='icons'>
-                        <a href="https://twitter.com/Rising_Cap" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://discord.gg/Msh4BeYhDj" target="_blank">
-                            <i class="fab fa-discord"></i>
-                        </a>
-        </div>
-                               
-
-                       </div>
-                    </div>
                 
               </div>
 
@@ -319,8 +320,8 @@
                 </div>
                 <script>
                   var activebtn = document.getElementById("{{$tagflux}}");
-                  activebtn.style.backgroundColor="blue";
-                  activebtn.children[0].style.color="#6e6ed9";
+                  activebtn.style.backgroundColor="#6e6ed9";
+                  activebtn.children[0].style.color="white";
                 </script>
             </div>
             <div class="maindiv3">
@@ -385,12 +386,12 @@
                     @endforeach
                 </div>
                 <div class="rightside">
-                    <a href="{{url('about-us')}}" style="text-decoration:none"><div class="foundercard">
+                    <div class="foundercard" onclick="window.location='https://risingstars.co/about-us'">
                         <h2>Founders Corner</h2>
                         <p>Get access to an active network of thought leaders from the Blockchain industry to take your venture to the moon!</p>
                         <p>Raise Funds<br>Web3 Services<br>Get Mentorship<br>Become a Partner</p>
        
-                    </div></a>
+                    </div>
                     <div class="featuredblogs">
                         <h2>Featured Blogposts</h2>
 
@@ -467,7 +468,7 @@
         <div class="modal-dialog">
           <div class="modal-content render-detail">
               <div class="row text-center">
-                  <img  class="loader-img" src="{{asset('assets/img/loader.gif')}}">
+                  
               </div>
             <!-- /.modal-content -->
           </div><!-- /.modal-dialog -->

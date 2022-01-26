@@ -6,7 +6,7 @@
 </style>
 <div class="modal-header">
             <h4 class="modal-title text-center"><img width="50px" src="{{url('/storage/'.$product->logo)}}"> <span>{{$product->product_title}}</span></h4>
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
           </div>
           <div class="modal-body">          
             <div class="container">

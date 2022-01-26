@@ -268,6 +268,7 @@ body h2{
     margin: 0;
     border-radius: 20px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 6%), 0 3px 10px 0 rgb(0 0 0 / 9%);
+    transform: scale(0.92);
 }
 .topcardblog p{
     color: #444444;
@@ -402,6 +403,9 @@ a:hover{
  text-decoration: none;
  float: left;
 }
+.socialSection{
+    margin-top: 50px;
+}
 
 .icons i.fab {
     font-size: 32px;
@@ -419,7 +423,7 @@ a:hover{
 }
 .banner_Section{
     height: fit-content;
-    padding-bottom: 70px;
+    padding-bottom: 35px;
 }
 .modal-content {
     width: 80%;
@@ -432,11 +436,9 @@ a:hover{
     }
     .banner_Section{
         height: fit-content;
-        padding-top: 109px;
         padding-bottom: 38px;
     }
     .description{
-        padding: 0 0 0 28px; 
         width: 55%;
     }
     .modal-content {
