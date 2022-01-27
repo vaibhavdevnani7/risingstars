@@ -432,6 +432,9 @@ a:hover{
 .banner_Section{
     height: fit-content;
     padding-bottom: 35px;
+    background: url(https://www.hyperscalefund.com/bg-patterns.svg) left top no-repeat, linear-gradient(
+206deg
+, #5a62b9 -10.92%, #c0c0dd 30.96%, #dfbdbd 110.9%) center center;
 }
 .modal-content {
     width: 80%;
@@ -440,14 +443,14 @@ a:hover{
 }
 
 .toplogonew{
-    width: 27%;
+    width: 19%;
     position: absolute;
     top: 17px;
-    left: 16px;
+    left: 15px;
     z-index: 9999;
 }
 .description{
-    padding: 91px 0 0 17px;
+    padding: 91px 0 0 43px;
     position: static;
     top: 0;
     left: 0;
