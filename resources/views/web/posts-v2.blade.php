@@ -20,7 +20,7 @@
         <title>Rising Stars</title>
         <meta name="robots" content="noindex,nofollow" />
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/img/FAVICON.png" type="image/x-icon">
         @yield('header-script')
         
         <style type="text/css">
