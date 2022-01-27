@@ -26,10 +26,10 @@
                                           <div class="spacer py-2 py-sm-4"></div>
                                           <div class="d-table">
                                               <div class="d-table-cell"><a class="custom-btn custom-btn--big custom-btn--style-1" href="{{url('be-partner')}}" title="read more">Become a Partner</a></div>
-                                             {{--  <div class="d-table-cell">
+                                             <div class="d-table-cell">
                                                   <div class="top-bar__auth-btns ml-5"><a class="custom-btn custom-btn--big custom-btn--style-3" href="{{url('raise-fund')}}">Raise Funds</a>
                                                   </div>
-                                              </div> --}}
+                                              </div>
                                           </div>
                                       </div>
                                   </div>

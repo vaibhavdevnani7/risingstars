@@ -42,7 +42,15 @@
               let username = '{{Auth()->user()->name}}';
             @endguest
         </script>
-        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7JGXS3LT7"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S7JGXS3LT7');
+        </script>
 
     </head>
     <body class="home page-template page-template-custom-page page-template-custom-page-php page page-id-19 theme-techland nt-shortcode-1.0 woocommerce-no-js Techland nt-version-1.0 wpb-js-composer js-comp-ver-6.4.1 vc_responsive">
@@ -70,8 +78,7 @@
                                           <div class="row align-items-center no-gutters">
                                               <a style="color: #2f86c4; font-weight: bold;" href="{{url('/')}}" id="nt-logo" class="top-bar__logo site-logo">
                                                   
-                                                  <img src="https://rising-star-img.s3.ap-south-1.amazonaws.com/whiteLogo.png" alt="Rising Star" class="img-fluid main-logo" />
-                                                  <!-- Rising Star -->
+                                            
                                               </a>
                                               
                                               <a id="top-bar__navigation-toggler" class="top-bar__navigation-toggler" href="javascript:void(0);"><span></span></a>
@@ -168,9 +175,10 @@
 <main>
   <div id="home" class="nt-section">
   <div class="postSection">
+  <img class="toplogonew" src="assets/img/rising logo.png" onclick="window.location='https://risingstars.co/'">
               <div class="banner_Section">
+                  
                 <div class='description'>
-                       <h2>RISING STARS</h2>
                        <h3>World’s Leading Place To Discover Crypto & Web3 Projects.</h3>
                 
         
@@ -183,7 +191,7 @@
                         <a href="https://twitter.com/Rising_Cap" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://discord.gg/Msh4BeYhDj" target="_blank">
+                        <a href="https://discord.gg/Xy4wKJkfkz" target="_blank">
                             <i class="fab fa-discord"></i>
                         </a>
                         </div>
@@ -299,6 +307,7 @@
               </div>
 
               <div class="maindiv">
+              <button onclick="topFunction()" id="myBtn" title="Go to top"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M0 20c0 11.028 8.972 20 20 20s20-8.972 20-20S31.028 0 20 0 0 8.972 0 20zm29.023 3.333l-2.356 2.357L20 19.023l-6.667 6.667-2.356-2.357L20 14.31l9.023 9.023z" fill="#666" opacity="0.5"></path></svg></button>
         <div class="maindiv2">
             <div class="topbar">
             <form action="{{url('/')}}" method="get"  class="topsearchbar">
@@ -314,7 +323,7 @@
                 <div class="filterbuttons">
                     <button id="nft"><a href="{{url('/?search=nft')}}">NFT</a></button>
                     <button id="de-fi"><a href="{{url('/?tags=de-fi')}}">DeFi</a></button>
-                    <button id="dao"><a href="">DAO</a></button>
+                    <button id="dao"><a href="{{url('/?search=dao')}}">DAO</a></button>
                     <button id="game-fi"><a href="{{url('/?tags=game-fi')}}">GameFi</a></button>
                     <button id="metaverse"><a href="{{url('/?tags=metaverse')}}">MetaVerse</a></button>
                 </div>
@@ -322,6 +331,7 @@
                   var activebtn = document.getElementById("{{$tagflux}}");
                   activebtn.style.backgroundColor="#6e6ed9";
                   activebtn.children[0].style.color="white";
+                  activebtn.children[0].href="https://risingstars.co/";
                 </script>
             </div>
             <div class="maindiv3">
@@ -446,7 +456,7 @@
                     <div class="rightfooter">
                     
                         <a target="_blank" href="https://hashtalk.substack.com/">Blog </a>|
-                        <a target="_blank" href="https://discord.gg/Msh4BeYhDj">Discord </a>| 
+                        <a target="_blank" href="https://discord.gg/Xy4wKJkfkz">Discord </a>| 
                         <a target="_blank" href="https://twitter.com/Rising_Cap">Twitter </a>|
                         <a href="https://sand-challenge-855.notion.site/Rising-Stars-Guide-48f085cde58342cbb02792e8ca56fefb" target="_blank">Resources</a> |
                         <a href="https://risingstars.co/about-us">About Us</a>
@@ -521,6 +531,24 @@
           showModel('{{request('product')}}');
         @endif
       });
+    </script>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var mybutton = document.getElementById("myBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
     </script>
     @yield('footer-script')
   </body>

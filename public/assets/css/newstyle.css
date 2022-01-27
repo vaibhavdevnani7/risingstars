@@ -4,6 +4,10 @@ body{
     overflow-x: visible;
     
 }
+@font-face {
+    font-family: karm;
+    src: url(assets/ka1.ttf);
+}
 body h2{
     letter-spacing: 0.1px;
 }
@@ -350,6 +354,9 @@ a:hover{
     padding: 15px;
     margin-bottom: 40px;
 }
+.foundercard:hover{
+    cursor: pointer;
+}
 .foundercard h2{
     font-size: 22px;
     color: white;
@@ -366,6 +373,7 @@ a:hover{
 
 .description h2{
     font-weight: 600;
+    font-family: karm;
 }
 .banner_Section{
 	background: linear-gradient(278deg
@@ -430,6 +438,31 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
 }
+
+.toplogonew{
+    width: 27%;
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    z-index: 9999;
+}
+.description{
+    padding: 91px 0 0 17px;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 35%;
+    z-index: 999;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+.description h3{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 32px;
+    padding-top: -10px;
+    margin-bottom: 73px;
+}
 @media screen and (max-width: 1200px) {
     .topcardblog{
         display: none;
@@ -453,9 +486,35 @@ a:hover{
         text-align: center;
         margin-left: 0;
     }
+    .toplogonew{
+        width: 40%;
+    }
+}
 @media screen and (max-width: 800px){
     .description{
         width: 100%;
         padding: 20px;
     }
+    .toplogonew{
+        width: 58%;
+    }
 }
+#myBtn{
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    border: 0;
+    background-color: white;
+    z-index: 999;
+
+}
+@media screen and (max-width: 800px){
+   #myBtn{
+       transform: scale(0.85);
+
+   }
+}
+
+
+
+

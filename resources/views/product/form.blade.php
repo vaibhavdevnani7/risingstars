@@ -49,7 +49,7 @@
                 <div class="__name h3">Product <span>Form</span></div>
             </div>
           </div>
-          <p>Laura lipsam Laura lipsam Laura lipsam Laura lipsam Laura lipsam Laura lipsam Laura lipsam Laura lipsam </p>
+          
         </div>
         <div class="form__row row mt-5">
             
@@ -207,12 +207,30 @@
             </label>
             
             <div class="mt-4 row ml-1">
-              @foreach($tags as $key=>$tag)
-                <div class="md-checkbox col-md-4">
-                  <input id="tag-{{$key}}" type="checkbox" name="tags[]" value="{{$key}}" class="required only-one tag" data-target-class="tag">
-                  <label for="tag-{{$key}}">{{$tag->tag_name}}</label>
-                </div>
-              @endforeach
+            <div class="md-checkbox col-md-4">
+                <input id="tag-160" type="checkbox" name="tags[]" value="160" class="required only-one tag" data-target-class="tag">
+                <label for="tag-160">NFT</label>
+            </div>
+            <div class="md-checkbox col-md-4">
+                <input id="tag-1" type="checkbox" name="tags[]" value="1" class="required only-one tag" data-target-class="tag">
+                <label for="tag-1">DeFi</label>
+            </div>
+            <div class="md-checkbox col-md-4">
+                <input id="tag-162" type="checkbox" name="tags[]" value="162" class="required only-one tag" data-target-class="tag">
+                <label for="tag-162">DAO</label>
+            </div>
+            <div class="md-checkbox col-md-4">
+                <input id="tag-21" type="checkbox" name="tags[]" value="21" class="required only-one tag" data-target-class="tag">
+                <label for="tag-21">GameFi</label>
+            </div>
+            <div class="md-checkbox col-md-4">
+                <input id="tag-164" type="checkbox" name="tags[]" value="164" class="required only-one tag" data-target-class="tag">
+                <label for="tag-164">Crypto Trading</label>
+            </div>
+            <div class="md-checkbox col-md-4">
+                <input id="tag-8" type="checkbox" name="tags[]" value="8" class="required only-one tag" data-target-class="tag">
+                <label for="tag-8">Metaverse</label>
+            </div>
             </div>
             <div class="tag-error"></div>
           </div>
