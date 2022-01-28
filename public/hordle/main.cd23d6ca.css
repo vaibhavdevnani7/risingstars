@@ -2,17 +2,19 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-f
             .header {
                 margin-left: auto;
                 margin-right: auto;
-                width: 50%
+                width: 50%;
+                
             }
             .header img {
-                width: 100%
+                width: 100%;
+                
             }
             @media screen and (max-width:768px) {
                 .header {
-                    width: 95%
+                    width: 95%;
+                    
                 }
             }
-            html{
-                background-color: #fff;
-            }
+            
+            
 /*# sourceMappingURL=main.cd23d6ca.css.map*/
