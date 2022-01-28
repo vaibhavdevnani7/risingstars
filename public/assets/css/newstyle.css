@@ -4,10 +4,7 @@ body{
     overflow-x: visible;
     
 }
-@font-face {
-    font-family: karm;
-    src: url(assets/ka1.ttf);
-}
+
 body h2{
     letter-spacing: 0.1px;
 }
