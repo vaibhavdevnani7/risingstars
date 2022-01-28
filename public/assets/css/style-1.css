@@ -2152,9 +2152,7 @@ img.img-fluid.main-logo {}
     display: block;
 }
 
-.home_02.is-expanded a#nt-logo img:last-child, .top-bar.is-expanded .top-bar__navigation li:last-child {
-    display: none;
-}
+
 
 /*.top-bar.is-sticky .top-bar__navigation li:last-child{display: none;}*/
 
