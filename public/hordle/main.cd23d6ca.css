@@ -9,12 +9,22 @@ body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-f
                 width: 100%;
                 
             }
+            .footer{
+                margin-top: 20px;
+            }
+            .logoimg {
+                width: 20%;
+            }
             @media screen and (max-width:768px) {
                 .header {
                     width: 95%;
                     
                 }
+                .logoimg {
+                    width: 60%;
+                }
             }
+            
             
             
 /*# sourceMappingURL=main.cd23d6ca.css.map*/
