@@ -324,7 +324,7 @@
                 <div class="filterbuttons">
                     <button id="nft"><a href="{{url('/?search=nft')}}">NFT</a></button>
                     <button id="de-fi"><a href="{{url('/?tags=de-fi')}}">DeFi</a></button>
-                    <button id="dao"><a href="{{url('/?search=dao')}}">DAO</a></button>
+                    <button id="dao"><a href="{{url('/?tags=dao')}}">DAO</a></button>
                     <button id="game-fi"><a href="{{url('/?tags=game-fi')}}">GameFi</a></button>
                     <button id="metaverse"><a href="{{url('/?tags=metaverse')}}">MetaVerse</a></button>
                 </div>
