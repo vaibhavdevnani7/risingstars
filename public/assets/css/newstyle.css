@@ -66,13 +66,14 @@ body h2{
 }
 .productthumb{
     flex: 0 0 100px;
+    height: 100px;
     float: left;
     padding: 9px;
 }
 .productthumb img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .productdetails{
