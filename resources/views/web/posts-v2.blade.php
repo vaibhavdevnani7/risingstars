@@ -530,6 +530,7 @@
         @if(request('product'))
           $("#myModal").modal('show');
           showModel('{{request('product')}}');
+          $('.slick-carousel').slick('unslick').slick('reinit').slick();
         @endif
       });
     </script>
@@ -551,6 +552,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
     </script>
+    
     @yield('footer-script')
   </body>
 </html>
