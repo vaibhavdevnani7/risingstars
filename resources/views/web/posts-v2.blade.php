@@ -512,7 +512,6 @@
             success:function(response){
                 console.log(response)
                 $(document).find('.render-detail').html(response);
-                $('.slick-carousel').slick('unslick').slick('reinit').slick();
                 wait=false;
             },
             error: function (jqXHR, textStatus, errorThrown) {
